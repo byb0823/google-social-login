@@ -1,12 +1,10 @@
-package com.example.social_login.config.oauth;
+package com.example.social_login.oauth.properties;
 
 import lombok.Getter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @Getter
-@ConfigurationProperties(prefix = "oauth2.provider")
 public class Provider {
-
     private String tokenUrl;
     private String userInfoUrl;
 }

@@ -1,14 +1,13 @@
-package com.example.social_login.config.oauth;
+package com.example.social_login.oauth.properties;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Component;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 
 import java.util.Map;
 
-@Component
 @RequiredArgsConstructor
+@ConfigurationProperties(prefix = "oauth2")
 public class OauthProperties {
-
     private final Map<String, Client> client;
     private final Map<String, Provider> provider;
 
